@@ -1,9 +1,7 @@
-import sys
-import re
+a = input()
+croatia_a = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
-word = sys.stdin.readline().strip() # 입력받기
+for i in croatia_a:
+    a = a.replace(i, "*")
 
-word = re.sub("dz=", "A", word) 
-word = re.sub("(c=|c-|d-|lj|nj|s=|z=)", "A", word)
-
-print(len(word))
+print(len(a))
