@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 /*
 1. 문제 분석
@@ -24,13 +23,9 @@ import java.util.StringTokenizer;
        StringTokenizer의 경우 0을 반환하기 때문에 더 적절하다.
  */
 
+
 public class Main {
-
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        System.out.println(st.countTokens());
-
+        System.out.println(new java.util.StringTokenizer(new BufferedReader(new InputStreamReader(System.in)).readLine()).countTokens());
     }
 }
