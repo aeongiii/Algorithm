@@ -33,6 +33,8 @@ import java.io.*;
     1) break는 반복문 탈출, return은 메서드 종료, System.exit(0)은 실행 종료이다. 출력해야 할것들이 있기 때문에 return으로 해야한다.
     2) 조건에서 2 × 10^9는 매우 큰 숫자이므로 long을 사용해야 한다!
     3) while (T-- > 0) :: T를 하나씩 감소시키면서, T가 양수인 동안 while문 반복한다.
+    4) 힙이 비어있는지 확인하는 로직이 필요하다...
+
  */
 
 public class Main {
